@@ -42,7 +42,7 @@ function Card({type,carDescription,className}) {
 }
 function Icon({name}) {
     return (
-        <div>
+        <div className="icon__container">
             <img src={`images/icon-${name}.svg`} alt="sedan" />
         </div>
     )

@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    padding: 40px;
+    padding: 40px;    
 }
 
 button {
@@ -28,15 +28,17 @@ button {
 }
 
 .gridlayout {
+    
     border-radius: 10px;
     overflow: hidden;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: 1000px;   
 }
 
 .card {
     color: var(--transparent-white);
-    padding: 3rem;
-    
+    padding: 0 5rem ;     
 }
 .card--sedan {
     background-color: var(--bright-orange);
@@ -57,6 +59,10 @@ button {
     color: var(--very-dark-cyan);
 }
 
+.icon__container {
+    padding-top: 50px;
+}
+
 
 .title {
     color: var(--very-light-gray);
@@ -70,8 +76,10 @@ button {
     color: var(--transparent-white);
     font-family: var(--lexend-deca);
     font-size: .9rem;
-    line-height: 1.7;
-    margin-top: 25px;
+    line-height: 2.0;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+
 
 }
 
@@ -79,6 +87,7 @@ button {
     font-family: var(--lexend-deca);
     font-size: .9rem;
     margin-top: 25px;
+    margin-bottom: 40px;
     border-radius: 40px;
     border: none;
     padding: 15px 30px;
